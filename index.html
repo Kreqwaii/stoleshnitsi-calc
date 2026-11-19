@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stoleshnitsi.com: Калькулятор столешниц из искусственного камня в Москве</title>
+  <meta name="description" content="Интерактивный инженерный калькулятор столешниц из искусственного камня от производителя Stoleshnitsi.com в Москве и МО. Grandex, Staron, HI-Macs, Corian от 9 000 руб.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23171C21'/%3E%3Cpath d='M7 9h18v5H12v9H7V9z' fill='%23F5F5F3'/%3E%3Crect x='15' y='17' width='10' height='6' rx='1' fill='%231E4D5C'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Stoleshnitsi.com на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="2" y="2" width="24" height="24" rx="4" stroke="#171C21" stroke-width="1.6"/>
+            <path d="M7 8H21V12.5H11.5V20H7V8Z" stroke="#1E4D5C" stroke-width="1.6" stroke-linejoin="round"/>
+            <line x1="15" y1="16.5" x2="21" y2="16.5" stroke="#171C21" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Stoleshnitsi.com</span>
+          <span class="brand-sub">Производство в Москве и МО</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Разделы сайта">
+        <a href="#calculator">Калькулятор</a>
+        <a href="#catalog">Марки камня</a>
+        <a href="#production">Производство</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+79999150305" class="header-phone font-mono">+7 (999) 915-03-05</a>
+        <a href="#measurer-section" class="btn btn-primary btn-sm">Вызвать замерщика</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+            <span>Собственный цех в Москве без посредников</span>
+          </div>
+          <h1>Столешницы из искусственного камня с точностью до 1 мм</h1>
+          <p class="hero-lead">
+            Прямое производство столешниц, интегрированных моек и барных стоек из акрилового камня Grandex, Staron, HI-Macs, Neomarm, Tristone и Corian. Расчет сметы в реальном времени по вашим габаритам.
+          </p>
+          <div class="hero-cta">
+            <a href="#calculator" class="btn btn-primary">Рассчитать в калькуляторе</a>
+            <a href="#catalog" class="btn btn-outline">Выбрать марку камня</a>
+          </div>
+        </div>
+
+        <div class="hero-specs" aria-label="Ключевые показатели производства">
+          <div class="spec-card">
+            <span class="spec-label">Базовая ставка</span>
+            <span class="spec-value font-mono">от 9 000 ₽</span>
+            <span class="spec-note">на акционные декоры камня</span>
+          </div>
+          <div class="spec-card">
+            <span class="spec-label">Срок изготовления</span>
+            <span class="spec-value font-mono">3–5 дней</span>
+            <span class="spec-note">от замера до монтажа</span>
+          </div>
+          <div class="spec-card">
+            <span class="spec-label">Выгода от салона</span>
+            <span class="spec-value font-mono">до 30%</span>
+            <span class="spec-note">прямая цена производителя</span>
+          </div>
+          <div class="spec-card">
+            <span class="spec-label">Гарантия на изделие</span>
+            <span class="spec-value font-mono">10 лет</span>
+            <span class="spec-note">сертифицированный материал</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="calculator-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">Инженерный расчет</span>
+            <h2>Конструктор и калькулятор столешницы</h2>
+          </div>
+          <p class="section-desc">
+            Выберите геометрию, задайте размеры в сантиметрах и отметьте технологические опции. Чертеж и смета обновляются мгновенно.
+          </p>
+        </div>
+
+        <div class="calc-workspace">
+          <!-- Левая панель управления -->
+          <div class="calc-controls">
+            <!-- Шаг 1: Конфигурация -->
+            <div class="control-block">
+              <div class="block-header">
+                <span class="step-badge font-mono">01</span>
+                <h3>Конфигурация столешницы</h3>
+              </div>
+              <div class="shape-selector" role="radiogroup" aria-label="Форма столешницы">
+                <button type="button" class="shape-btn is-active" data-shape="straight" aria-pressed="true">
+                  <svg width="36" height="24" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <rect x="3" y="8" width="30" height="8" rx="1"/>
+                  </svg>
+                  <span>Прямая</span>
+                </button>
+                <button type="button" class="shape-btn" data-shape="l-shape" aria-pressed="false">
+                  <svg width="36" height="24" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <path d="M5 4H31V11H13V20H5V4Z" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Г-образная</span>
+                </button>
+                <button type="button" class="shape-btn" data-shape="u-shape" aria-pressed="false">
+                  <svg width="36" height="24" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <path d="M4 4H32V20H24V11H12V20H4V4Z" stroke-linejoin="round"/>
+                  </svg>
+                  <span>П-образная</span>
+                </button>
+                <button type="button" class="shape-btn" data-shape="island" aria-pressed="false">
+                  <svg width="36" height="24" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <rect x="4" y="3" width="28" height="6" rx="1"/>
+                    <rect x="9" y="13" width="18" height="8" rx="1"/>
+                  </svg>
+                  <span>С островом</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Шаг 2: Размеры -->
+            <div class="control-block">
+              <div class="block-header">
+                <span class="step-badge font-mono">02</span>
+                <h3>Габариты в сантиметрах</h3>
+                <button type="button" class="btn-reset" id="reset-dims">Сбросить</button>
+              </div>
+
+              <div class="dims-grid">
+                <div class="dim-field" data-dim="a">
+                  <div class="dim-label-row">
+                    <label for="input-a" id="label-a">Длина основной части (A)</label>
+                    <div class="dim-input-wrap">
+                      <input type="number" id="input-a" min="80" max="600" step="5" value="280" class="font-mono">
+                      <span class="unit">см</span>
+                    </div>
+                  </div>
+                  <input type="range" id="range-a" min="80" max="600" step="5" value="280" aria-label="Длина основной части A в см">
+                </div>
+
+                <div class="dim-field is-hidden" data-dim="b">
+                  <div class="dim-label-row">
+                    <label for="input-b" id="label-b">Длина правого крыла (B)</label>
+                    <div class="dim-input-wrap">
+                      <input type="number" id="input-b" min="80" max="450" step="5" value="180" class="font-mono">
+                      <span class="unit">см</span>
+                    </div>
+                  </div>
+                  <input type="range" id="range-b" min="80" max="450" step="5" value="180" aria-label="Длина крыла B в см">
+                </div>
+
+                <div class="dim-field is-hidden" data-dim="c">
+                  <div class="dim-label-row">
+                    <label for="input-c" id="label-c">Длина левого крыла (C)</label>
+                    <div class="dim-input-wrap">
+                      <input type="number" id="input-c" min="80" max="450" step="5" value="160" class="font-mono">
+                      <span class="unit">см</span>
+                    </div>
+                  </div>
+                  <input type="range" id="range-c" min="80" max="450" step="5" value="160" aria-label="Длина стороны C в см">
+                </div>
+
+                <div class="dim-field" data-dim="depth">
+                  <div class="dim-label-row">
+                    <label for="input-depth">Глубина столешницы (D)</label>
+                    <div class="dim-input-wrap">
+                      <input type="number" id="input-depth" min="40" max="120" step="2" value="60" class="font-mono">
+                      <span class="unit">см</span>
+                    </div>
+                  </div>
+                  <input type="range" id="range-depth" min="40" max="120" step="2" value="60" aria-label="Глубина столешницы в см">
+                </div>
+
+                <div class="dim-field is-hidden" data-dim="island-w">
+                  <div class="dim-label-row">
+                    <label for="input-island-w">Ширина острова (D2)</label>
+                    <div class="dim-input-wrap">
+                      <input type="number" id="input-island-w" min="60" max="140" step="5" value="90" class="font-mono">
+                      <span class="unit">см</span>
+                    </div>
+                  </div>
+                  <input type="range" id="range-island-w" min="60" max="140" step="5" value="90" aria-label="Ширина острова в см">
+                </div>
+              </div>
+            </div>
+
+            <!-- Шаг 3: Категория камня -->
+            <div class="control-block">
+              <div class="block-header">
+                <span class="step-badge font-mono">03</span>
+                <h3>Категория и бренд камня</h3>
+              </div>
+              <div class="stone-tier-grid" id="stone-tiers" role="radiogroup" aria-label="Категория камня">
+                <button type="button" class="tier-card" data-tier="base" data-rate="9000" aria-pressed="false">
+                  <span class="tier-top">
+                    <span class="tier-name">Базовая серия</span>
+                    <span class="tier-price font-mono">9 000 ₽/м</span>
+                  </span>
+                  <span class="tier-brands">Однотонный акрил, базовые декоры Hanex</span>
+                </button>
+                <button type="button" class="tier-card is-active" data-tier="standard" data-rate="11500" aria-pressed="true">
+                  <span class="tier-top">
+                    <span class="tier-name">Grandex / Staron / Tristone</span>
+                    <span class="tier-price font-mono">11 500 ₽/м</span>
+                  </span>
+                  <span class="tier-brands">Южная Корея, песчаные и мраморные серии</span>
+                </button>
+                <button type="button" class="tier-card" data-tier="designer" data-rate="12000" aria-pressed="false">
+                  <span class="tier-top">
+                    <span class="tier-name">LG HI-Macs / Neomarm</span>
+                    <span class="tier-price font-mono">12 000 ₽/м</span>
+                  </span>
+                  <span class="tier-brands">Южная Корея, глубокая текстура мрамора</span>
+                </button>
+                <button type="button" class="tier-card" data-tier="premium" data-rate="13500" aria-pressed="false">
+                  <span class="tier-top">
+                    <span class="tier-name">Corian DuPont</span>
+                    <span class="tier-price font-mono">13 500 ₽/м</span>
+                  </span>
+                  <span class="tier-brands">США, премиальная архитектурная палитра</span>
+                </button>
+              </div>
+
+              <div class="decor-row">
+                <label for="decor-select" class="decor-label">Выбранный образец декора:</label>
+                <div class="decor-select-wrap">
+                  <span class="decor-swatch" id="active-swatch" aria-hidden="true"></span>
+                  <select id="decor-select" aria-label="Декор искусственного камня">
+                    <option value="Grandex S-204 Creamy Sand" data-tier="standard" data-color="#E7DFD2">Grandex S-204 Creamy Sand (Ю. Корея)</option>
+                    <option value="Grandex M-702 River Bed" data-tier="standard" data-color="#D7D5CE">Grandex M-702 River Bed (Ю. Корея)</option>
+                    <option value="Samsung Staron SG420" data-tier="standard" data-color="#C9C5BC">Samsung Staron SG420 (Ю. Корея)</option>
+                    <option value="Tristone TS-113 Cronium" data-tier="standard" data-color="#A5A8AA">Tristone TS-113 Cronium (Ю. Корея)</option>
+                    <option value="Hanex Base Bianco" data-tier="base" data-color="#F2F1ED">Hanex Base Bianco (Базовая серия)</option>
+                    <option value="LG HI-Macs G117 Cappuccino" data-tier="designer" data-color="#C8B9A6">LG HI-Macs G117 Cappuccino (Ю. Корея)</option>
+                    <option value="Neomarm NM-113 World Map" data-tier="designer" data-color="#DDD9D0">Neomarm NM-113 World Map (Ю. Корея)</option>
+                    <option value="Corian Silverite" data-tier="premium" data-color="#CFD3D6">Corian Silverite (DuPont, США)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Шаг 4: Опции и сервис -->
+            <div class="control-block">
+              <div class="block-header">
+                <span class="step-badge font-mono">04</span>
+                <h3>Вырезы, кромка и монтаж</h3>
+              </div>
+
+              <div class="options-list">
+                <label class="option-item">
+                  <span class="option-main">
+                    <input type="checkbox" id="opt-hob" checked>
+                    <span class="option-text">
+                      <strong>Вырез под варочную панель</strong>
+                      <small>Фрезеровка на ЧПУ с термоизоляцией</small>
+                    </span>
+                  </span>
+                  <span class="option-cost font-mono">+2 500 ₽</span>
+                </label>
+
+                <label class="option-item">
+                  <span class="option-main">
+                    <input type="checkbox" id="opt-sink-integrated" checked>
+                    <span class="option-text">
+                      <strong>Интегрированная мойка из камня</strong>
+                      <small id="sink-gift-note">Бесшовная вклейка в цвет столешницы (от 5 м2 в подарок)</small>
+                    </span>
+                  </span>
+                  <span class="option-cost font-mono" id="sink-cost-label">+14 000 ₽</span>
+                </label>
+
+                <label class="option-item">
+                  <span class="option-main">
+                    <input type="checkbox" id="opt-plinth" checked>
+                    <span class="option-text">
+                      <strong>Пристеночный бортик</strong>
+                      <small>Герметичное примыкание к фартуку по длине стен</small>
+                    </span>
+                  </span>
+                  <span class="option-cost font-mono" id="plinth-cost-label">+1 200 ₽/м</span>
+                </label>
+
+                <label class="option-item">
+                  <span class="option-main">
+                    <input type="checkbox" id="opt-delivery" checked>
+                    <span class="option-text">
+                      <strong>Доставка и монтаж в Москве и МО</strong>
+                      <small>Занос, бесшовная склейка, полировка на месте</small>
+                    </span>
+                  </span>
+                  <span class="option-cost font-mono" id="delivery-cost-label">+9 500 ₽</span>
+                </label>
+              </div>
+
+              <div class="sub-selects-row">
+                <div class="sub-field" id="zone-wrap">
+                  <label for="delivery-zone">Зона доставки</label>
+                  <select id="delivery-zone">
+                    <option value="9500" data-label="Москва в пределах МКАД">Москва (в пределах МКАД): 9 500 ₽</option>
+                    <option value="12500" data-label="МО до 30 км от МКАД">МО до 30 км от МКАД: 12 500 ₽</option>
+                    <option value="15500" data-label="МО от 30 до 60 км">МО 30-60 км от МКАД: 15 500 ₽</option>
+                  </select>
+                </div>
+                <div class="sub-field">
+                  <label for="edge-profile">Профиль торцевой кромки</label>
+                  <select id="edge-profile">
+                    <option value="0" data-label="Прямая фаска R3 (в подарок)">Прямая с фаской R3 (включена)</option>
+                    <option value="1800" data-label="Радиусная полукруглая">Радиусная R12 (+1 800 ₽)</option>
+                    <option value="3200" data-label="Непроливайка с бортиком">Профиль непроливайка (+3 200 ₽)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Правая sticky панель: чертеж + смета -->
+          <aside class="calc-preview" aria-label="Чертеж и расчет стоимости">
+            <div class="blueprint-card">
+              <div class="blueprint-head">
+                <div class="blueprint-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                  </svg>
+                  <span>Интерактивный чертеж изделия</span>
+                </div>
+                <span class="blueprint-scale font-mono" id="blueprint-dims-badge">280 × 60 см</span>
+              </div>
+
+              <div class="svg-stage">
+                <svg id="countertop-svg" viewBox="0 0 540 340" role="img" aria-label="Технический чертеж столешницы с размерами"></svg>
+              </div>
+
+              <div class="blueprint-metrics">
+                <div class="metric-box">
+                  <span class="metric-label">Полезная площадь</span>
+                  <span class="metric-val font-mono" id="metric-area">1.68 м²</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Погонаж (расч.)</span>
+                  <span class="metric-val font-mono" id="metric-pm">2.80 пог.м</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Примыкание к стене</span>
+                  <span class="metric-val font-mono" id="metric-wall">2.80 м</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="estimate-card">
+              <div class="estimate-head">
+                <h3>Детализация сметы</h3>
+                <span class="bonus-pill" id="bonus-badge">Разделочная доска в подарок</span>
+              </div>
+
+              <dl class="estimate-lines" id="estimate-lines">
+                <!-- Заполняется из app.js -->
+              </dl>
+
+              <div class="estimate-total-row">
+                <div>
+                  <span class="total-caption">Ориентировочная стоимость</span>
+                  <span class="total-sub" id="total-stone-caption">Grandex / Staron / Tristone</span>
+                </div>
+                <div class="total-sum font-mono" id="total-price">59 760 ₽</div>
+              </div>
+
+              <div class="estimate-actions">
+                <a href="#measurer-section" class="btn btn-primary btn-block" id="btn-order-measure">Зафиксировать смету и вызвать замерщика</a>
+                <button type="button" class="btn btn-outline btn-block" id="btn-copy-estimate">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Скопировать расчет</span>
+                </button>
+              </div>
+              <p class="estimate-footnote">
+                Точный замер до 1 мм выполняется инженером бесплатно с образцами выбранного камня на объекте.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">Каталог материалов</span>
+            <h2>Сертифицированные марки искусственного камня</h2>
+          </div>
+          <p class="section-desc">
+            Прямые поставки листового камня из Южной Кореи и США. Нажмите на любую марку, чтобы подставить ставку и популярный декор в калькулятор.
+          </p>
+        </div>
+
+        <div class="brands-grid">
+          <article class="brand-card">
+            <div class="brand-card-top">
+              <span class="brand-origin">Базовая серия</span>
+              <span class="brand-rate font-mono">от 9 000 ₽</span>
+            </div>
+            <h3>Акрил Стандарт / Hanex</h3>
+            <p>Практичные однотонные и мелкозернистые оттенки для прямых кухонных столешниц и санузлов с быстрым сроком выдачи.</p>
+            <div class="swatch-strip">
+              <span class="swatch-chip" style="--sw:#F2F1ED">Base Bianco</span>
+              <span class="swatch-chip" style="--sw:#E3DFD7">Warm Sand</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm apply-stone-btn" data-tier="base" data-decor="Hanex Base Bianco">Применить в расчете</button>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-card-top">
+              <span class="brand-origin">Южная Корея</span>
+              <span class="brand-rate font-mono">от 11 500 ₽</span>
+            </div>
+            <h3>Grandex</h3>
+            <p>Премиальный акриловый камень с востребованными коллекциями под мрамор, матовый камень и теплые песочные текстуры.</p>
+            <div class="swatch-strip">
+              <span class="swatch-chip" style="--sw:#E7DFD2">S-204 Creamy Sand</span>
+              <span class="swatch-chip" style="--sw:#D7D5CE">M-702 River Bed</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm apply-stone-btn" data-tier="standard" data-decor="Grandex S-204 Creamy Sand">Применить в расчете</button>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-card-top">
+              <span class="brand-origin">Южная Корея</span>
+              <span class="brand-rate font-mono">от 11 500 ₽</span>
+            </div>
+            <h3>Samsung Staron</h3>
+            <p>Разработка концерна Samsung с 44 оттенками и четырьмя фактурами: песчаной, гранитной, кварцевой и пастельной.</p>
+            <div class="swatch-strip">
+              <span class="swatch-chip" style="--sw:#C9C5BC">SG420</span>
+              <span class="swatch-chip" style="--sw:#DFDCD5">S04232</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm apply-stone-btn" data-tier="standard" data-decor="Samsung Staron SG420">Применить в расчете</button>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-card-top">
+              <span class="brand-origin">Южная Корея</span>
+              <span class="brand-rate font-mono">от 12 000 ₽</span>
+            </div>
+            <h3>LG HI-Macs и Neomarm</h3>
+            <p>Высокоплотный агломерат LG HI-Macs и выразительные мраморные прожилки Neomarm, не отличимые от натурального камня.</p>
+            <div class="swatch-strip">
+              <span class="swatch-chip" style="--sw:#C8B9A6">G117 Cappuccino</span>
+              <span class="swatch-chip" style="--sw:#DDD9D0">NM-113 World Map</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm apply-stone-btn" data-tier="designer" data-decor="LG HI-Macs G117 Cappuccino">Применить в расчете</button>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-card-top">
+              <span class="brand-origin">Южная Корея</span>
+              <span class="brand-rate font-mono">от 11 500 ₽</span>
+            </div>
+            <h3>Tristone (Lion Chemtech)</h3>
+            <p>Экологически чистый корейский акрил повышенной однородности для сложных Г-образных и П-образных бесшовных изделий.</p>
+            <div class="swatch-strip">
+              <span class="swatch-chip" style="--sw:#A5A8AA">TS-113 Cronium</span>
+              <span class="swatch-chip" style="--sw:#D4CFC6">T-008 Zultanite</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm apply-stone-btn" data-tier="standard" data-decor="Tristone TS-113 Cronium">Применить в расчете</button>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-card-top">
+              <span class="brand-origin">США (DuPont)</span>
+              <span class="brand-rate font-mono">от 13 500 ₽</span>
+            </div>
+            <h3>Corian</h3>
+            <p>Оригинальный эталон акрилового камня DuPont с максимальной ремонтопригодностью и глубоким бархатистым матовым финишем.</p>
+            <div class="swatch-strip">
+              <span class="swatch-chip" style="--sw:#CFD3D6">Silverite</span>
+              <span class="swatch-chip" style="--sw:#9F958C">Silt</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm apply-stone-btn" data-tier="premium" data-decor="Corian Silverite">Применить в расчете</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="production" class="production-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">Условия и сервис</span>
+            <h2>Производственный стандарт Stoleshnitsi.com</h2>
+          </div>
+          <p class="section-desc">
+            Контролируем весь цикл от выезда инженера с чемоданом образцов до бесшовной полировки стыков на вашей кухне.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </span>
+            <h3>Бесплатный выезд замерщика</h3>
+            <p>Менеджер-технолог приезжает с полными каталогами Grandex, Staron, HI-Macs, Corian и делает лазерный замер геометрии стен.</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </span>
+            <h3>Производство за 3–5 дней</h3>
+            <p>Собственный цех раскроя и термоформинга позволяет выдавать готовые столешницы в разы быстрее салонных посредников.</p>
+          </div>
+
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </span>
+            <h3>Бонусы при заказе</h3>
+            <p>Разделочная доска из камня в тон, базовые кромки и бортики включены, а при площади от 5 м2 интегрированная мойка идет в подарок.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="measurer-section" class="measurer-section">
+      <div class="container measurer-grid">
+        <div class="measurer-info">
+          <span class="section-eyebrow">Заявка на замер</span>
+          <h2>Вызвать замерщика с образцами камня</h2>
+          <p>
+            Ваша конфигурация из калькулятора автоматически прикрепится к письму на адрес производства <strong>info@stoleshnitsi.com</strong>. Вы можете отправить запрос в один клик или связаться напрямую по телефону.
+          </p>
+
+          <div class="summary-preview-box">
+            <div class="summary-preview-head">
+              <span>Параметры вашего расчета</span>
+              <span class="font-mono" id="form-summary-price">59 760 ₽</span>
+            </div>
+            <p class="summary-preview-text font-mono" id="form-summary-text">
+              Прямая столешница 280 × 60 см (1.68 м2) | Grandex S-204 Creamy Sand
+            </p>
+          </div>
+
+          <ul class="contact-list" id="contacts">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span><a href="tel:+79999150305" class="font-mono">+7 (999) 915-03-05</a> · <a href="tel:+74951421635" class="font-mono">+7 (495) 142-16-35</a></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:info@stoleshnitsi.com" class="font-mono">info@stoleshnitsi.com</a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>г. Москва, Дмитровское шоссе, д. 161 Б, ТЦ «Империя», 4 этаж (ежедневно с 9:00 до 21:00)</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="measurer-form" id="measurer-form">
+          <div class="form-row">
+            <label for="client-name">Ваше имя</label>
+            <input type="text" id="client-name" name="name" autocomplete="name" placeholder="Например, Александр" required>
+          </div>
+          <div class="form-row">
+            <label for="client-phone">Телефон для связи</label>
+            <input type="tel" id="client-phone" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-row">
+            <label for="client-address">Адрес замера (Москва или МО)</label>
+            <input type="text" id="client-address" name="address" autocomplete="street-address" placeholder="Район, улица или ЖК">
+          </div>
+          <div class="form-row">
+            <label for="client-comment">Комментарий по проекту</label>
+            <textarea id="client-comment" name="comment" rows="3" placeholder="Желаемая дата замера или пожелания по кромке"></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn btn-primary btn-block">Открыть письмо на info@stoleshnitsi.com</button>
+          </div>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          <p class="form-legal">
+            Нажимая кнопку, вы подтверждаете согласие на обработку персональных данных согласно 152-ФЗ.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <span class="footer-brand">Stoleshnitsi.com</span>
+        <span class="footer-meta">г. Москва, Дмитровское шоссе, д. 161 Б, ТЦ «Империя», 4 этаж · 9:00–21:00</span>
+      </div>
+      <div class="footer-col footer-right">
+        <span class="footer-signature">Интерактивный калькулятор для производства stoleshnitsi.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
